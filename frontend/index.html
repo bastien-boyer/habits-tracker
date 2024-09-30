@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Habits-Tracker</h1>
+      <div id="habitContainer" class="habits"></div>
+      <dialog id="addHabitDialog" class="dialog">
+        <div class="dialog-content">
+          <p>Add a new habit!</p>
+          <form method="dialog" class="" name="formNewHabit">
+            <input
+              type="text"
+              placeholder="Habit"
+              id="habitNameInput"
+              name="habitName"
+            />
+            <button id="closeDialog" class="close-button" type="reset">
+              X
+            </button>
+            <button id="addNewhabit" class="button" type="submit">Add</button>
+          </form>
+        </div>
+      </dialog>
+      <button id="openModal">Add new habit</button>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
